@@ -43,16 +43,18 @@ function App()
                 <span id="author">{randomQuote['author']}</span>
               </div>
               <div className="buttons-box">
-                <a 
-                  className="button"
-                  id="tweet-quote"
-                  title="Tweett this Quote!"
-                  target="_top"
-                  href="# "
-                >
+                  <a className="button"
+                    style={{color:color}}
+                    href={'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text='+
+                    encodeURIComponent('"'+randomQuote['quote']+'"'+randomQuote['author'])}
+                    id="tweet-quote"
+                    title="Tweet this Quote!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <i className="fa fa-twitter"></i> 
-                </a>
-                <button style={{backgroundColor:color}}
+                  </a>
+                <button style={{backgroundColor:color,cursor:"pointer"}}
                   className="button" 
                   id="new-quote"
                   onClick={getNewQuote}
