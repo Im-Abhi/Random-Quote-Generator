@@ -1,3 +1,6 @@
+# Random-Quote-Generator
+![ndPB72cf4f](https://user-images.githubusercontent.com/86161191/138493279-990f70b9-197a-484e-91b5-e9e28298b25d.png)
+
 # To start using Random-Quote-Generator
 
 Make sure you have [nodejs](https://nodejs.org/en/) installed.
